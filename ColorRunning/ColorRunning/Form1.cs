@@ -256,8 +256,8 @@ namespace ColorRunning
                         }
                         else
                         {
-                            field.Controls[(i%2==0?"1":"2")+j+i].BackColor=Color.FromName(knownArray[colorTick]);
-                            field.Controls[(i%2==0?"1":"2") + j + (MakePictureBox.totalColumns-i)].BackColor = Color.FromName(knownArray[colorTick]);
+                            field.Controls[(i % 2 == 0 ? "1" : "2") + j + i].BackColor = Color.FromName(knownArray[colorTick]);
+                            field.Controls[(i % 2 == 0 ? "1" : "2") + j + (MakePictureBox.totalColumns - 1 - i)].BackColor = Color.FromName(knownArray[colorTick]);
                         }
                     }
                 }

@@ -25,3 +25,12 @@ C:\Users\jurik\Desktop\Black_InUse\_Github\ColorEffect_Kiir\ColorRunning\ColorRu
 C:\Users\jurik\Desktop\Black_InUse\_Github\ColorEffect_Kiir\ColorRunning\ColorRunning\obj\Debug\ColorRunning.ColorEffect.resources
 C:\Users\jurik\Desktop\Black_InUse\_Github\ColorEffect_Kiir\ColorRunning\ColorRunning\obj\Debug\ColorRunning.Properties.Resources.resources
 C:\Users\jurik\Desktop\Black_InUse\_Github\ColorEffect_Kiir\ColorRunning\ColorRunning\obj\Debug\ColorRunning.csproj.GenerateResource.Cache
+D:\Project\Kiir\ColorEffect_Kiir\ColorRunning\ColorRunning\bin\Debug\ColorRunning.exe.config
+D:\Project\Kiir\ColorEffect_Kiir\ColorRunning\ColorRunning\obj\Debug\ColorRunning.exe
+D:\Project\Kiir\ColorEffect_Kiir\ColorRunning\ColorRunning\obj\Debug\ColorRunning.pdb
+D:\Project\Kiir\ColorEffect_Kiir\ColorRunning\ColorRunning\bin\Debug\ColorRunning.exe
+D:\Project\Kiir\ColorEffect_Kiir\ColorRunning\ColorRunning\bin\Debug\ColorRunning.pdb
+D:\Project\Kiir\ColorEffect_Kiir\ColorRunning\ColorRunning\obj\Debug\ColorRunning.csprojResolveAssemblyReference.cache
+D:\Project\Kiir\ColorEffect_Kiir\ColorRunning\ColorRunning\obj\Debug\ColorRunning.ColorEffect.resources
+D:\Project\Kiir\ColorEffect_Kiir\ColorRunning\ColorRunning\obj\Debug\ColorRunning.Properties.Resources.resources
+D:\Project\Kiir\ColorEffect_Kiir\ColorRunning\ColorRunning\obj\Debug\ColorRunning.csproj.GenerateResource.Cache
