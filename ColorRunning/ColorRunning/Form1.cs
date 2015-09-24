@@ -241,14 +241,29 @@ namespace ColorRunning
                 {
                     for (int j = 0; j < MakePictureBox.totalRows; j++)
                     {
-                        field.Controls[(j * MakePictureBox.totalColumns) + controller - 1 - i].BackColor = Color.FromName(knownArray[colorTick]);
+                        if (!(MakePictureBox.totalCount % 2 == 0) && MakePictureBox.totalCount == (j * MakePictureBox.totalColumns) + controller + i)
+                        {
+
+                        }
+                        else
+                        {
+                            field.Controls[(j * MakePictureBox.totalColumns) + controller - 1 - i].BackColor = Color.FromName(knownArray[colorTick]);
+                        }
                     }
                 }
                 for (int k = 0; k < timerTick; k++)
                 {
                     for (int l = 0; l < MakePictureBox.totalRows; l++)
                     {
-                        field.Controls[(l*MakePictureBox.totalColumns)+controller+k].BackColor = Color.FromName(knownArray[colorTick]);
+                        if (!(MakePictureBox.totalCount % 2 == 0) && MakePictureBox.totalCount==(l*MakePictureBox.totalColumns)+controller+k)
+                        {
+                            
+                        }
+                        else
+                        {
+                            field.Controls[(l*MakePictureBox.totalColumns)+controller+k-1].BackColor = Color.FromName(knownArray[colorTick]);
+                        }
+                        
                     }
                 }
                 timerTick++;
