@@ -37,7 +37,7 @@ namespace ColorRunning
                     {
                         int numberPic = int.Parse(NumberOfPictureBox.Text);
                         
-                        if (numberPic != 0&& numberPic<1000)
+                        if (numberPic != 0&& numberPic<100)
                         {
                             field.Controls.Clear();
                             sComboBox = BoxColor;
@@ -213,14 +213,19 @@ namespace ColorRunning
                 {
                     for (int j = 0; j < MakePictureBox.totalRows; j++)
                     {
-                        field.Controls[j*MakePictureBox.totalColumns+i].BackColor = Color.FromName(knownArray[colorTick]);
-                    } 
-                }
-                for (int k = 0; k < timerTick; k++)
-                {
-                    for (int l = 0; l < MakePictureBox.totalRows; l++)
-                    {
-                        field.Controls[MakePictureBox.totalCount-1-k - (l*MakePictureBox.totalColumns)].BackColor = Color.FromName(knownArray[colorTick]);
+                        if (false)
+                        {
+                            if (false)//last checked ValueType was middle one break
+                            {
+                                break;
+                            }
+
+                        }
+                        else
+                        {
+                            field.Controls[(i % 2 == 0 ? "1" : "2") + j + i].BackColor = Color.FromName(knownArray[colorTick]);
+                            //field.Controls[((MakePictureBox.totalColumns-i) % 2 == 0 ? "1" : "2") + j + Convert.ToString(MakePictureBox.totalColumns-1 - i)].BackColor = Color.FromName(knownArray[colorTick]);
+                        }
                     }
                 }
                 timerTick++;
@@ -241,31 +246,51 @@ namespace ColorRunning
                 {
                     for (int j = 0; j < MakePictureBox.totalRows; j++)
                     {
-                        if (!(MakePictureBox.totalCount % 2 == 0) && MakePictureBox.totalCount == (j * MakePictureBox.totalColumns) + controller + i)
+                        if (false)
                         {
-
+                            if (false)//last checked ValueType was middle one break
+	                        { 
+                                break;		 
+	                        }
+                           
                         }
                         else
                         {
-                            field.Controls[(j * MakePictureBox.totalColumns) + controller - 1 - i].BackColor = Color.FromName(knownArray[colorTick]);
+                            field.Controls[(i%2==0?"1":"2")+j+i].BackColor=Color.FromName(knownArray[colorTick]);
+                            field.Controls[(i%2==0?"1":"2") + j + (MakePictureBox.totalColumns-i)].BackColor = Color.FromName(knownArray[colorTick]);
                         }
                     }
                 }
-                for (int k = 0; k < timerTick; k++)
-                {
-                    for (int l = 0; l < MakePictureBox.totalRows; l++)
-                    {
-                        if (!(MakePictureBox.totalCount % 2 == 0) && MakePictureBox.totalCount==(l*MakePictureBox.totalColumns)+controller+k)
-                        {
+                //for (int i = 0; i < timerTick; i++)
+                //{
+                //    for (int j = 0; j < MakePictureBox.totalRows; j++)
+                //    {
+                //        if (true)
+                //        {
                             
-                        }
-                        else
-                        {
-                            field.Controls[(l*MakePictureBox.totalColumns)+controller+k-1].BackColor = Color.FromName(knownArray[colorTick]);
-                        }
-                        
-                    }
-                }
+                //        }
+                //        else
+                //        {
+
+                //        }
+                //            field.Controls[(j * MakePictureBox.totalColumns) + controller - 1 - i].BackColor = Color.FromName(knownArray[colorTick]);
+                //    }
+                //}
+                //for (int k = 0; k < timerTick; k++)
+                //{
+                //    for (int l = 0; l < MakePictureBox.totalRows; l++)
+                //    {
+                //        if (true)
+                //        {
+                            
+                //        }
+                //        else
+                //        {
+
+                //        }
+                //        field.Controls[(l*MakePictureBox.totalColumns)+controller+k-1].BackColor = Color.FromName(knownArray[colorTick]);                       
+                //    }
+                //}
                 timerTick++;
             }
         }
